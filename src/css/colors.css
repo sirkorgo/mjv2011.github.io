@@ -1,6 +1,18 @@
-:body.index {
-  --sidebar-bg:body.index {
-    --body-content-color: linear-gradient(113deg, #a1b3ff 0%, #c3a1ff 100%);
-    --body-border-color: #2000af;
-  }
+/* Colors CSS: Basically the color palletes for all your pages --body-div-color is the color for the windows on the corresponding page; 
+--body-border-color is the color of the border for the window on the corresponding page.*/
+
+body.index {
+  --body-div-color: linear-gradient(113deg, #a1b3ff 0%, #c3a1ff 100%);
+  --body-border-color: #2000af;
+  --bg-image: url(/src/img/index-bg.png);
+}
+
+body.art {
+  --body-div-color: linear-gradient(191deg, #fffca1 0.02%, #ffe9a1 100.02%);
+  --body-border-color: #af8100;
+}
+
+body.chars {
+  --body-div-color: linear-gradient(113deg, #acffa1 0%, #ffffa1 100%);
+  --body-border-color: #1daf00;
 }

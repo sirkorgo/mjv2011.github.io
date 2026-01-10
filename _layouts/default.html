@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <link href="/src/css/colors.css" rel="stylesheet" />
+    <link href="/src/css/global.css" rel="stylesheet" />
+  </head>
+
+  <body class="{{ page.colors }}">
+    <div class="container">
+      {% include sidebar.html %}
+      <div>{{ content }}</div>
+    </div>
+  </body>
+</html>

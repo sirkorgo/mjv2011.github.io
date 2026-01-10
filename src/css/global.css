@@ -1,0 +1,70 @@
+@import url("/src/css/colors.css");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+/* Fonts */
+
+p {
+  color: #000;
+
+  -webkit-text-stroke-width: 8px;
+  -webkit-text-stroke-color: #e5e0ff;
+  paint-order: stroke fill;
+
+  font-family: "Comic Neue";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  background-image: var(--bg-image);
+  background-repeat: repeat;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  margin: 10px 100px 10px 100px;
+  justify-content: center;
+}
+
+.content {
+  min-width: fit-content;
+  width: 75%;
+  max-width: 100%;
+  padding: 0px 15px 0px 15px;
+
+  min-height: fit-content;
+  height: 70%;
+  max-height: 70%;
+  overflow-y: auto;
+
+  background: var(--body-div-color);
+  border-radius: 20px;
+  border: 10px solid var(--body-border-color);
+}
+
+.sidebar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-self: flex-start;
+
+  padding: 0px 10px 0px 10px;
+
+  width: 264px;
+  flex: 0 0 auto;
+  min-width: 264px;
+  max-width: 264px;
+
+  min-height: fit-content;
+  height: 95%;
+
+  background: var(--body-div-color);
+  border-radius: 20px;
+  border: 10px solid var(--body-border-color);
+}
