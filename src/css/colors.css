@@ -31,15 +31,15 @@ body.blog {
   --bg-image: url(/src/img/bg/blog-bg.png);
 }
 
-body.web {
-  --body-div-color: linear-gradient(113deg, #a1b7ff 0%, #a1ffff 100%);
-  --body-border-color: #0052af;
-  --bg-image: url(/src/img/bg/guestbook-bg.png);
+body.comic {
+  --body-div-color: linear-gradient(113deg, #ffa1a1 0%, #ffb4a1 100%);
+  --body-border-color: #af0000;
+  --bg-image: url(/src/img/bg/webcomic-bg.png);
 }
 
 body.error {
-  --body-div-color: linear-gradient(113deg, #ffa1a9 0%, #e26e6e 100%);
-  --body-border-color: #af0000;
+  --body-div-color: linear-gradient(113deg, #ffa1a9 0%, #e2936e 100%);
+  --body-border-color: #d31d1d;
   --bg-image: url(/src/img/bg/error-bg.png);
 }
 

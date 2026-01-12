@@ -43,6 +43,10 @@ small {
   line-height: normal !important;
 }
 
+br {
+  padding: 20px 0px 20px 0px;
+}
+
 /* General */
 body {
   margin: 0;
