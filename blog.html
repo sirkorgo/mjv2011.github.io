@@ -3,3 +3,15 @@ layout: default
 title: emjayvee's website
 colors: blog
 ---
+
+<div class="content" style="width: 100%; height: 100vh !important">
+  {% for post in site.posts %}
+  <div class="post">
+    <p>{{ post.date | date: "%b %-d, %Y" }}<br />{{post.title}}</p>
+    <p style="margin-top: 5px; -webkit-text-stroke-width: 3px">
+      {{post.content}}
+    </p>
+  </div>
+  <hr style="border-color: var(--body-border-color) !important" />
+  {% endfor %}
+</div>
