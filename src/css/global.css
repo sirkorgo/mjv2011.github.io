@@ -102,6 +102,11 @@ body {
   column-gap: 37px;
 }
 
+.icongrid :hover {
+  transform: scale(1.1);
+  transition: all 0.2s;
+}
+
 /* Animations */
 @keyframes scrollBackground {
   from {
