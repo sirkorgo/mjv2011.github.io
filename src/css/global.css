@@ -102,11 +102,6 @@ body {
   column-gap: 37px;
 }
 
-.icongrid :hover {
-  transform: scale(1.1);
-  transition: all 0.2s;
-}
-
 /* Animations */
 @keyframes scrollBackground {
   from {
@@ -120,4 +115,42 @@ body {
 .hvr :hover {
   transform: scale(1.1);
   transition: all 0.2s;
+}
+
+/* Marquee */
+
+.marquee {
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee--inner {
+  display: block;
+  width: 200%;
+  position: absolute;
+  animation: marquee 10s linear infinite;
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+.span {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
